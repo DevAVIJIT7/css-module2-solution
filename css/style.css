@@ -1,0 +1,89 @@
+/********** Base styles *********
+* {
+  box-sizing: border-box;
+}
+*/
+header > h1 {
+  text-align: center;
+}
+
+.row > div:nth-child(1) {
+  background-color: #9b59b6;
+}
+
+.row > div:nth-child(2) {
+  background-color: #3498db;
+}
+
+.row > div:nth-child(3) {
+  background-color: #2ecc71;
+}
+
+.row > div > h3 {
+  margin-left: 310px;
+  margin-top: 0px;
+  border: 1px solid black;
+  padding: 5px; 
+  background-color: #f1c40f;
+}
+
+.row > div > p {
+  padding: 5px; 
+}
+
+/********** Small devices only ************/
+
+@media (max-width: 767px) {
+
+  .row  {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 35px;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+    
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+
+  .row  {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 35px;
+  }
+
+  .col-lg-4 {
+    display: table-cell;
+  }
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .row  {
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 35px;
+  }
+
+  .col-md-6 {
+    display: table-cell;
+    background-color: red;
+    width: 50%;
+  }
+
+  .col-md-12 {
+    float: left;
+    width: 93%;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
